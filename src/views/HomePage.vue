@@ -8,6 +8,14 @@
       </ion-header>
 
       <p class="start-game" @click="takePhoto()">Go</p>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="6" :key="photo" v-for="photo in photos">
+            <ion-img :src="photo.webviewPath"></ion-img>
+            <p>{{photo.webviewPath}}</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
     </ion-content>
   </ion-page>
 </template>
@@ -21,7 +29,7 @@ import {
   IonToolbar,
 } from "@ionic/vue";
 import { defineComponent } from "vue";
-import { usePhotoGallery } from "@/composables/usePhotoGallery";
+import { usePhotoGallery, UserPhoto } from "@/composables/usePhotoGallery";
 
 export default defineComponent({
   name: "HomePage",
@@ -32,10 +40,11 @@ export default defineComponent({
     IonTitle,
     IonToolbar,
   },
-   setup() {
-    const { takePhoto } = usePhotoGallery();
+  setup() {
+    const { photos, takePhoto } = usePhotoGallery();
 
     return {
+      photos,
       takePhoto,
       openLibrary() {
         alert("open lib");
