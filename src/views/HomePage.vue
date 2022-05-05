@@ -7,7 +7,6 @@
         </ion-toolbar>
       </ion-header>
 
-<<<<<<< Updated upstream
       <p class="start-game" @click="takePhoto()">Go</p>
       <ion-grid>
         <ion-row>
@@ -17,12 +16,7 @@
           </ion-col>
         </ion-row>
       </ion-grid>
-=======
-      <p class="start-game" @click="takePhoto()">
-        Go
-      </p>
       <ChronoView />
->>>>>>> Stashed changes
     </ion-content>
   </ion-page>
 </template>
@@ -36,13 +30,9 @@ import {
   IonToolbar,
 } from "@ionic/vue";
 import { defineComponent } from "vue";
-<<<<<<< Updated upstream
 import { usePhotoGallery, UserPhoto } from "@/composables/usePhotoGallery";
-=======
-import { usePhotoGallery } from "@/composables/usePhotoGallery";
 import ChronoView from "@/composents/ChronoView.vue";
 import { useStopwatch } from "vue-timer-hook";
->>>>>>> Stashed changes
 
 export default defineComponent({
   name: "HomePage",
@@ -55,11 +45,7 @@ export default defineComponent({
     ChronoView,
   },
   setup() {
-<<<<<<< Updated upstream
     const { photos, takePhoto } = usePhotoGallery();
-=======
-    const { takePhoto } = usePhotoGallery();
->>>>>>> Stashed changes
 
     return {
       photos,
