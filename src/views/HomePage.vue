@@ -1,11 +1,5 @@
 <template>
   <ion-page>
-    <ion-header :translucent="true">
-      <ion-toolbar>
-        <ion-title class="main-title">Ready ?</ion-title>
-      </ion-toolbar>
-    </ion-header>
-
     <ion-content :fullscreen="true">
       <ion-header collapse="condense">
         <ion-toolbar>
@@ -57,10 +51,6 @@ export default defineComponent({
   width: 72.464vw;
   height: 72.464vw;
   background-color: #ffc409;
-  border-radius: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 15.459vw;
 }
 </style>
