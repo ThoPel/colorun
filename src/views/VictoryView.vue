@@ -3,9 +3,9 @@
     <ion-content :fullscreen="true">
       <ion-header collapse="condense">
         <ion-toolbar class="header-wrapper">
-          <ion-title class="main-title" size="large">Nope</ion-title>
+          <ion-title class="main-title" size="large">You found it !</ion-title>
         </ion-toolbar>
-        <p class="timer">12.43.567</p>
+        <p class="timer">in 12.43.567</p>
       </ion-header>
 
       <div class="image-wrapper">
@@ -13,8 +13,10 @@
       </div>
 
       <div class="button-wrapper">
-        <a href="/home" class="give-up">Give up</a>
-        <a href="/camera" class="back-game">Back in game</a>
+        <a href="/home" class="go-home"
+          >Go <br />
+          home</a
+        >
       </div>
     </ion-content>
   </ion-page>
@@ -31,7 +33,7 @@ import {
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: "NopeView",
+  name: "VictoryView",
   components: {
     IonContent,
     IonHeader,
@@ -44,7 +46,7 @@ export default defineComponent({
 
 <style scoped>
 .main-title {
-  color: #ff0005;
+  color: #2BCA11;
 }
 
 .button-wrapper {
@@ -66,5 +68,10 @@ export default defineComponent({
 .give-up {
   background-color: #ff0005;
   color: #fff;
+}
+
+.back-game {
+  background-color: #ffc409;
+  color: #000;
 }
 </style>

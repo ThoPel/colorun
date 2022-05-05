@@ -54,7 +54,10 @@ a {
 .start-game,
 .timer,
 .give-up,
-.back-game {
+.back-game,
+.go-home,
+.time-text-wrapper,
+.time-text {
   font-family: "Kinetic", sans-serif;
   text-transform: uppercase;
   font-weight: 900;
@@ -80,10 +83,34 @@ a {
 
 .start-game,
 .give-up,
-.back-game {
+.back-game,
+.go-home {
   border-radius: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.give-up,
+.back-game,
+.go-home {
+  width: 21.498vw;
+  height: 21.498vw;
+  font-size: 3.382vw;
+  line-height: 90%;
+}
+
+.back-game,
+.go-home {
+  background-color: #ffc409;
+  color: #000;
+}
+
+.timer {
+  margin: 0;
+  padding: 2.415vw;
+  text-align: center;
+  text-transform: initial;
+  background-color: #fff;
 }
 </style>
